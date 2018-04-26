@@ -1,0 +1,103 @@
+body {
+  color: #FFFFFB;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 30vh 0;
+}
+
+.one__icon {
+  background: rgba(0,0,0,.3);
+  color: rgba(0,0,0,.3);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+}
+
+.one {
+  background: #FFC145;
+  position: relative;
+  height: 100vh;
+  /* transition-duration: 2s;
+  transition-property: height; */
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+animation-name: example;
+animation-duration: 4s;
+
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+from {height: 0vh;}
+to {height: 100vh;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {height: 0vh;}
+  to {height: 100vh;}
+}
+
+.line{
+  height:50vh;
+  width:0vw;
+  border-bottom:3px solid #000;
+  
+  -webkit-animation: increase 3s;
+  -moz-animation:    increase 3s; 
+  -o-animation:      increase 3s; 
+  animation:         increase 3s; 
+  animation-fill-mode: forwards;
+  animation-delay: 3s
+}
+
+@keyframes increase {
+    100% {
+        width: 100vw;
+    }
+
+}
+
+.PopupPanel
+{
+    /* border: solid 0px black; */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    z-index: 100;
+
+    height: 0vh;
+    margin-top: -200px;
+
+    width: 50vw;
+    margin-left: -100px;
+
+    -webkit-animation: fill 3s;
+    -moz-animation:    fill 3s; 
+    -o-animation:      fill 3s; 
+    animation:         fill 3s; 
+    animation-fill-mode: forwards;
+    animation-delay: 4s
+}
+
+@keyframes fill {
+  0% {
+
+    border: solid 3px black;;
+}
+  100% {
+      height: 45vh;
+      border: solid 3px black;;
+  }
+
+}
